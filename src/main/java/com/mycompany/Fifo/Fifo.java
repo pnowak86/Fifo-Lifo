@@ -1,4 +1,6 @@
-package com.mycompany;
+package com.mycompany.Fifo;
+
+import com.mycompany.Item;
 
 import java.util.Iterator;
 
@@ -20,7 +22,7 @@ public class Fifo {
         }
     }
 
-    public Item pull (){
+    public Item pop(){
         Item current = firstAdded;
 
         if (firstAdded == null) {

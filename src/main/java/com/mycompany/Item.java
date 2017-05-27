@@ -5,12 +5,21 @@ package com.mycompany;
  */
 public class Item {
     private Item previous;
+    private Item next;
+    private Object data;
 
-//    public Item(Item previous) {
+    //    public Item(Item previous) {
 //        this.previous = previous;
 //    }
-    public Item() {}
 
+
+    public Item(Object data) {
+        this.data = data;
+    }
+
+    public Object getData() {
+        return data;
+}
 
     public Item getPrevious() {
         return previous;
@@ -18,5 +27,13 @@ public class Item {
 
     public void setPrevious(Item previous) {
         this.previous = previous;
+    }
+
+    public Item getNext() {
+        return next;
+    }
+
+    public void setNext(Item next) {
+        this.next = next;
     }
 }
